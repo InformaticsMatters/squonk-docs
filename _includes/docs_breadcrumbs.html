@@ -1,0 +1,27 @@
+{% assign decodedurl = page.url | url_decode  %}
+{% assign end = decodedurl.size | minus: 2 %}
+{% assign docurl = decodedurl | slice: 1, end | split: "/" %}
+
+{% if docurl.size > 1 %}
+  <nav class="ui big breadcrumb" aria-label="breadcrumb">
+    {% for part in docurl %}
+
+      {% if forloop.last == false %}
+        {% if part != "content" %}
+          <a href="/{{ docurl | slice: 0, forloop.index | join: "/" }}/" class="section">{{ part | capitalize }}</a>
+          <i class="right angle icon divider"></i>
+        {% endif %}
+      {% else %}
+        <div class="active section" aria-current="page">
+          {% if part != "cells" %}
+            {{ part }}
+          {% else %}
+            Cells
+          {% endif %}
+        </div>
+      {% endif %}
+
+    {% endfor %}
+
+  </nav>
+{% endif %}

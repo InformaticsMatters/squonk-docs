@@ -1,0 +1,24 @@
+links:
+  User Guide:
+    link: "User Guide"
+    children:
+      Key Concepts:
+        link: "User Guide/Key Concepts"
+      Notebook Components:
+        link: "User Guide/Notebook Components"
+      Building Workflows:
+        link: "User Guide/Building Workflows"
+      Results Viewer:
+        link: "User Guide/Results Viewer"
+      Potions:
+        link: "User Guide/Potions"
+      Chemical Databases:
+        link: "User Guide/Chemical Databases"
+      Versioning and Sharing:
+        link: "User Guide/Versioning and Sharing"
+  History Of Changes:
+    link: "History of Changes"
+  Terms and Conditions:
+    link: "Terms and Conditions"
+
+

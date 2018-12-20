@@ -1,0 +1,38 @@
+---
+layout: docs_article
+title: Cell Directory
+cssIncludes:
+  - style/docs.css
+  - style/cellDirectory.css
+asyncJSResources:
+  - /lib/tablefilter/tablefilter.js
+jsIncludes:
+  - lib/cellDirectory.js
+  - lib/sidebar.js
+---
+
+<p>Directory of cells available in Squonk. You can filter by any of the terms in the table.</p>
+<p>Further information about usage is available from page describing the cell.</p>
+
+<h2>Entries</h2>
+
+<table class="ui compact fluid unstackable table" id="filterTable">
+  <thead>
+    <tr>
+      <th>Page name</th>
+      <th>Category</th>
+      <th>Source</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for cell in site.data.cells %}
+    <tr>
+      <td><a href="{{ site.baseurl }}/docs/cells/{{ cell.name }}">{{ cell.name }}</a></td>
+      <td>{{ cell.category }}</td>
+      <td>{{ cell.source }}</td>
+      <td><small>{{ cell.description }}</small></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>

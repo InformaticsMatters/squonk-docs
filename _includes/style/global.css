@@ -1,0 +1,91 @@
+:root
+{
+  --main-text-grey: #5c5c68;
+  --main-text-white: #ECF0F1;
+  --section-vertical-padding: 3.5em;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+h1.header.squonk
+{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+.raleway
+{
+  font-family: 'Raleway', sans-serif;
+}
+
+.container > h1:first-child, .segment > h1:first-child
+{
+  margin-bottom: 1em;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.container > h1:first-child::after, .segment > h1:first-child::after
+{
+  background: none repeat scroll 0 0 #E54A3B;
+  bottom: -25px;
+  content: "";
+  display: block;
+  height: 2px;
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+
+section.ui.container, section.ui.segment,
+main.ui.container, main.ui.segment
+{
+  padding-top: var(--section-vertical-padding);
+  padding-bottom: var(--section-vertical-padding);
+}
+
+
+/* Header */
+#masthead
+{
+  background: url("/assets/SquonkBanner.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  border-top: .5em solid #e54a3b;
+}
+#masthead * h1
+{
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.5em;
+}
+
+/* Footer */
+#footer
+{
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+#footer * a, #footer * h3, #footer * p, #footer * .item
+{
+  color: #5C5C68;
+  font-size: 1.15em;
+}
+#footer * p
+{
+  margin-bottom: 0;
+}
+
+/* Tablet / iPad Portrait */
+@media only screen and (min-width: 768px)
+{
+  #footer
+  {
+    text-align: left;
+  }
+  #footer * address
+  {
+    font-size: 0.8em;
+  }
+}

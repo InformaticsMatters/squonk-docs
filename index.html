@@ -1,0 +1,81 @@
+---
+layout: base
+title: Squonk
+---
+<header id="masthead" class="ui basic center aligned segment">
+  <div class="ui text container two column grid">
+    <div class="four wide column">
+      <img
+        id="squonk_masthead"
+        src="{% link assets/Squonk_Vector.svg %}"
+        onerror="this.src='{% link assets/Squonk.png %}'">
+    </div>
+    <div class="right floated right aligned four wide column">
+      <img
+        id="squonk_masthead"
+        src="{% link assets/Squonk_Vector.svg %}"
+        onerror="this.src='{% link assets/Squonk.png %}'">
+    </div>
+  </div>
+</header>
+
+<main class="ui grid container">
+  <div class="mobile only row">
+    <div class="sixteen wide column">
+      <button class="ui labeled icon red fluid button">
+        <i class="sidebar icon"></i>
+        Docs Menu
+      </button>
+    </div>
+  </div>
+  <nav class="four wide tablet computer only column">
+
+    <a href="{% link docs/index.html %}">
+      <h2 class="ui header">Docs</h2>
+    </a>
+    <ul class="ui bulleted list">
+      <li class="item">
+        <a href="{{ site.baseurl }}{% link docs/cells/index.html %}">Cell Directory</a>
+      </li>
+      {% for nav in site.data.docs.links %}
+
+      {% include docs_lister.html %}
+
+      {% endfor %}
+    </ul>
+
+
+  </nav>
+  <main class="sixteen wide mobile twelve wide tablet twelve wide computer column">
+    <h2>Squonk Title</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a arcu posuere, dictum mauris non, auctor lorem. Sed blandit hendrerit dolor a rutrum. Proin tempor ultrices orci, eu luctus metus rhoncus vitae. Nunc elementum iaculis mi vitae pharetra. Suspendisse lobortis nisi id porttitor ullamcorper. Mauris ultrices vel tellus at posuere. Duis id urna vitae risus bibendum sodales a ac nisi. Donec viverra orci vel quam molestie auctor.
+    </p>
+
+    <p>
+      Maecenas ultrices magna mi, nec condimentum ante iaculis blandit. Nunc consectetur mi eu nibh ornare suscipit. Etiam venenatis velit eu lacinia scelerisque. Quisque molestie tristique lorem, eget ultrices ex dictum vel. Curabitur urna ex, egestas quis libero quis, ultricies luctus nisl. Proin a feugiat mi. Quisque eu vehicula nunc. Sed sodales volutpat malesuada. Cras a hendrerit ipsum. Pellentesque convallis facilisis eros. Suspendisse ac luctus felis. Suspendisse non euismod nisl.
+    </p>
+
+    <h2>Customer Title</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a arcu posuere, dictum mauris non, auctor lorem. Sed blandit hendrerit dolor a rutrum. Proin tempor ultrices orci, eu luctus metus rhoncus vitae. Nunc elementum iaculis mi vitae pharetra. Suspendisse lobortis nisi id porttitor ullamcorper. Mauris ultrices vel tellus at posuere. Duis id urna vitae risus bibendum sodales a ac nisi. Donec viverra orci vel quam molestie auctor.
+    </p>
+  </main>
+</main>
+
+<nav class="ui sidebar inverted vertical menu">
+  <a href="{% link docs/index.html %}">
+    <h2 class="ui header">Docs</h2>
+  </a>
+  <ul class="ui very relaxed divided list">
+    <li class="item">
+      <a href="{{ site.baseurl }}{% link docs/cells/index.html %}">Cell Directory</a>
+    </li>
+    {% for nav in site.data.docs.links %}
+
+    {% include docs_lister.html %}
+
+    {% endfor %}
+  </ul>
+
+</nav>

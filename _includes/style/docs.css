@@ -1,0 +1,21 @@
+#docs {
+  --margins: 2.5em;
+  margin-top: var(--margins);
+  margin-bottom: var(--margins);
+}
+h3,h4 {
+  font-weight: bold;
+}
+
+nav.ui.sidebar {
+  padding: 0.5em;
+}
+nav.ui.sidebar a h2 {
+  color: var(--main-text-white)
+}
+code {
+  font-size: 0.8em;
+}
+nav.ui.breadcrumb+:not(h2) {
+  margin-top: 1em;
+}

@@ -1,0 +1,95 @@
+name,category,source,description
+3DMol.js,Visual,Academic Open Source,"Structure 3D viewer, allowing proteins and ligands to be displayed and manipulated. Uses 3DMol.js from University of Pittsburgh"
+Atom Count (CXN),Molecular Properties,ChemAxon,Atom count calculator for structures using ChemAxon's property calculators
+Box Plot,Visual,Squonk,Displays data as a box plot using the D3 Javascript library
+CNS MPO (CXN),Molecular Properties,ChemAxon,Multi-Parameter Optimisation score for drugs targeted at the Central Nervous Systmem (CNS).
+CSV Upload,Input/Output,Squonk,Allows a text file to be uploaded into the system. Comma and tab separated formats are supported along with basic options like whether to handle first line as headers.
+Canonical Smiles (RDKit),Molecular Properties,RDKit,Generate a canonical smiles string for structures using RDKit
+ChEMBL Activities Fetcher,Input/Output,EBI,Pulls compound and activity data  for a specified assay ID from the ChEMBL REST web services at the EBI
+Chemcentral Similarity Search,Structure search,RDKit,"Search our ""house"" databases using similarity search"
+Chemcentral Structure Search,Structure search,RDKit,"Search our ""house"" databases using exact or substructure search"
+Chemcentral multi-search,Structure search,RDKit,"Search our ""house"" databases to find structures similar to any of the input structures"
+Convert to Molecules,Transform,Squonk,Generate molecules from text representation e.g. a smiles column from a CSV file
+Dataset Docker Processor,Programming,Squonk,Process a dataset using a specified Docker container
+Dataset Enricher,Transform,Squonk,Enriches one dataset with content from another
+Dataset Potion,Transform,Squonk,A simple language for performing powerful data transformations
+Dataset Random Selector,Filter,Squonk,Select records at random from a dataset
+Dataset UUID filter,Filter,Squonk,Filter a dataset with a set of UUIDs
+Dataset slice selector,Filter,Squonk,Simple cell that let's you prepare a subset of a large dataset starting at a specified entry and including a specified number of entry
+Dataset sorter,Transform,Squonk,Sort a dataset by one or more fields
+Drug-like Filter (CXN),Molecular Properties,ChemAxon,Apply a drug likeness filter to molecules using ChemAxon's property calculators
+ECFP4 Screen (CXN),Molecular Screening,ChemAxon,Filter molecules with ECFP fingerprints similarity using ChemAxon's Screen
+Formal Charge (RDKit),Molecular Properties,RDKit,"Calculates the formal charge of a molecule. e.g. 1+, 2+, 1-, 0 (for neutral)"
+Frac sp3 C (RDKit),Molecular Properties,RDKit,Calculate the fraction of sp3 hybridised carbon atoms for structures using RDKit
+Ghose filter (CXN),Molecular Properties,ChemAxon,Ghose drug like filter implemented with ChemAxon's property calculators
+Ghose filter (RDKit),Molecular Properties,RDKit,Ghose drug like filter implemented using RDKit
+Groovy Dataset Filter,Filter,Squonk,Filter a dataset based on an expression using the Groovy programming language.
+HBA & HBD (CDK),Molecular Properties,CDK,H-bond acceptors and donors using Chemistry Development Kit
+HBA & HBD (RDKit),Molecular Properties,RDKit,Calculate the number of h-bond donors and acceptors for structures using RDKit
+Heatmap,Visual,Squonk,Display of relationships between data using a heatmap
+Image Viewer,Visual,Squonk,Simple viewer for image files
+KiDS MPO (CXN),Molecular Properties,ChemAxon,Multi-Parameter Optimisation score for kinase drugs.
+Lipinski filter (CXN),Molecular Properties,ChemAxon,Lipinski filter for structures using ChemAxon's property calculators
+Lipinski filter (RDKIT),Molecular Properties,RDKit,Calculate Lipinski properties for structures using RDKit
+LogD (CXN),Molecular Properties,ChemAxon,LogD predictor for structures using ChemAxon's property calculators
+LogP (CDK),Molecular Properties,CDK,ALogP and XLogP predictors for structures using Chemistry Development Kit
+LogP (CXN),Molecular Properties,ChemAxon,LogP predictor for structures using ChemAxon's property calculators
+LogP (OpenChemLib),Molecular Properties,OpenChemLib,LogP predictor for structures using OpenChemLib
+LogP (RDKit),Molecular Properties,RDKit,Predict LogP using RDKit
+LogS (CXN),Molecular Properties,ChemAxon,LogS (solubility) predictor for structures using ChemAxon's property calculators
+LogS (OpenChemLib),Molecular Properties,OpenChemLib,Solubility (LogS) predictor for structures using OpenChemLib
+Merge Datasets,Transform,Squonk,Merge multiple datasets into one using a common key. Useful for combining data from multiple sources into a single dataset where there is a common identifier linking the records
+MolAlignAssemblies,Molecular Screening,Other,Alignment of 3D structures
+Molar Refractivity (RDKit),Molecular Properties,RDKit,Predict molar refractivity using RDKit
+Molecule standardisers,Transform,RDKit,Two cells performing molecular standardisation using the MolVS and Flatkinson standardisers.
+MoleculeEnumerator,Transform,RDKit,Enumerates potential variants of a structure using RDKit
+Molecules From Field,Input/Output,Squonk,Creates a new dataset containing molecules present in the specified field of the input.
+Molfile Upload,Input/Output,Squonk,Allows a dataset to be created from a file in molfile format. The dataset will contain a single structure.
+NGL Viewer,Visual,PDB/RCSB,NGL 3D viewer from Alexander Rose
+PAINS filter (RDKit),Molecular Properties,RDKit,"Filter molecules using PAINS (Pan Assay Interference Compounds) filters, implemented with RDKit"
+PDB Upload,Input/Output,Squonk,Allows  file in PDB format to be uploaded
+PLI score,3D,Commercial Open Source,Scores docked structures using the Astex PLI scoring algorithm.
+PSA (OpenChemLib),Molecular Properties,OpenChemLib,Calculate the polar surface area for structures using OpenChemLib
+Parallel Coordinate Plot,Visual,Squonk,Display and filter data using a parallel coordinate plot
+Pharmacophore Screen (CXN),Molecular Screening,ChemAxon,Filter molecules with a 2D pharmacophore similarity using ChemAxon's Screen
+RDKit Butina Clustering,Clustering,RDKit,Cluster molecules using the Butina algorithm from RDKit.
+RDKit Cluster Matrix,Clustering,RDKit,Generates a clustered distance matrix from a dataset of molecules using Butina clustering from RDKit.
+RDKit Conformers,Molecular Properties,RDKit,Generate 3D conformers of molecules using RDKit
+RDKit Constrained Conformers,Molecular Properties,RDKit,"Generate conformers of a molecule, constraining a part of a molecule to fixed coordinates."
+RDKit Diverse Subset Picker,Clustering,RDKit,Cluster molecules using the Butina algorithm from RDKit and then pick a diverse subset of the molecules
+RDKit MaxMin Picker,Clustering,RDKit,Picks diverse subset of compounds using the MaxMinPicker algorithm as implemented in RDKit
+RDKit Multi-Similarity Screening,Molecular Screening,RDKit,Virtual screening using molecular similarity
+RDKit Open3D Align,Molecular Screening,RDKit,Performs 3D alignment of molecules using Open3DAlign
+RDKit Similarity Screening,Molecular Screening,RDKit,Virtual screening using molecular similarity
+REOS Filter (RDKit),Molecular Properties,RDKit,Rapid Elimination Of Swill filter - a drug-like structure filter using RDKit
+REOS filter (CXN),Molecular Properties,ChemAxon,Apply a drug likeness filter to molecules using ChemAxon's property calculators
+Ring Count (RDKit),Molecular Properties,RDKit,Calculate the number of rings and aromatic rings for structures using RDKit
+Rotatable bonds (RDKit),Molecular Properties,RDKit,Calculate the number of rotatable rings for structures using RDKit
+Rule of 3 filter (CXN),Molecular Properties,ChemAxon,Astex rule of 3 filter for filtering fragment libraries implemented with ChemAxon
+Rule of 3 filter (RDKit),Molecular Properties,RDKit,Astex rule of 3 filter for filtering fragment libraries implemented with RDKit
+SDF Export (CDK),Input/Output,CDK,Export structures to SDF using Chemistry Development Kit
+SDF Upload,Input/Output,Squonk,Allows a MDL SD file to be uploaded into the system. Structures and data are handled.
+SMARTCyp,Molecular Properties,Academic Open Source,SMARTCyp metabolic site prediction
+SMoG2016,3D,Academic Open Source,Scores docked structures using the SMoG 2016 scoring algorithm.
+Scatter Plot,Visual,Squonk,Displays data as a scatter plot using the D3 Javascript library
+Smiles Structures,Input/Output,Squonk,Read structures from smiles strings
+Smiles deduplicator,Filter,Squonk,De-duplicate a set of structures using a canonical smiles field
+SphereEx Clustering (CXN),Clustering,ChemAxon,Cluster molecules using sphere exclusion clustering and ECFP fingerprints using ChemAxon's JKulstor
+TPSA (RDKit),Molecular Properties,RDKit,Calculate topological polar surface area for structures using RDKit
+Table Display,Visual,Squonk,Displays data as a familiar table/spreadsheet
+Tmax Cmax Simulation,DMPK,Other,Simulator for Pharmacokinetic profiling of a compound
+Transform Values,Transform,Squonk,Convert data types e.g. convert from text to numbers
+Trusted Groovy Script,Programming,Squonk,"Process a dataset using a Groovy script. The script is trusted and executed ""in process"""
+Untrusted Groovy Script,Programming,Squonk,Process a dataset using a Groovy script. The script is not trusted and executed in its own safe sandbox.
+Veber filter (CXN),Molecular Properties,ChemAxon,Veber filter for orally active drugs implemented using ChemAxon
+Veber filter (RDKit),Molecular Properties,RDKit,Veber filter for orally active drugs implemented using RDKit
+Verify structure (CDK),Input/Output,CDK,Verify that the molecules are valid according to CDK
+Verify structure (CXN),Input/Output,ChemAxon,Verify that the molecules are valid according to ChemAxon's Marvin
+Verify structure (OCL),Input/Output,OpenChemLib,Verify that the molecules are valid according to OpenChemLib
+Verify structure (RDKit),Input/Output,RDKit,Verify that the molecules are valid according to RDKit
+Wiener Numbers (CDK),Molecular Properties,CDK,Wiener path and polarity numbers using Chemistry Development Kit
+XChem Reaction Maker,Transform,RDKit,Enumerate input molecules using a specified reaction and some reactions
+XChem Reaction Smarts Filter,Molecular Screening,RDKit,Filter a set of molecules according to whether they contain a substructure fragment compatible with a set of reaction types
+ZipFileUpload,Input/Output,Squonk,Cell that allows a zip file to be uploaded.
+pKa (CXN),Molecular Properties,ChemAxon,Acidic and basic pKa predictors using ChemAxon's property calculators
+rDock Docking,3D,Commercial Open Source,Ligand docking using rDock

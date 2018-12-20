@@ -1,0 +1,16 @@
+#filterTable * .ldiv {
+  width: 0;
+}
+#filterTable * .mdiv {
+  width: 90%;
+  text-align: left;
+}
+#filterTable * .rdiv {
+  width: 10%;
+}
+
+@media only screen and (min-width: 768px) {
+  #filterTable * .mdiv {
+    text-align: center;
+  }
+}

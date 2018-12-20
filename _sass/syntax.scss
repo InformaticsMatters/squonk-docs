@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+$spacing-unit:     30px !default;
+
+// Import partials.
+@import
+  "syntax/base",
+  "syntax/syntax-highlighting"
+;

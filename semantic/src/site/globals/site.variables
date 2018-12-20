@@ -1,0 +1,53 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+/*-------------------
+       Fonts
+--------------------*/
+
+@googleFontRequest : 'Open+Sans:400,600,700';
+@fontSmoothing     : antialiased;
+@importGoogleFonts : true;
+@headerFont        : 'Open Sans', sans-serif;
+@pageFont          : 'Open Sans', sans-serif;
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* The size of page text  */
+@fontSize : 18px;
+
+/*-------------------
+      Site Colors
+--------------------*/
+
+/*---  Colors  ---*/
+@red            : #E54A3B;
+@grey           : #43434F;
+@blue           : #AFCFCF;
+
+/*-------------------
+        Page
+--------------------*/
+
+@textColor           : @grey;
+
+/*---   Neutrals  ---*/
+@white            : #ECF0F1;
+
+/*-------------------
+       Links
+--------------------*/
+
+@linkColor: @red;
+
+/*--------------
+  Page Heading
+---------------*/
+@headerFontWeight : 300;
+
+@h1 : unit((58 / 14), rem);
+
+@largeMonitorBreakpoint      : 1440px;

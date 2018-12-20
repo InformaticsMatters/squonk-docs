@@ -1,0 +1,10 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+/* Menu */
+@verticalMargin: 0;
+
+
+/* Active Item */
+@activeItemBackground: transparent;

@@ -1,0 +1,21 @@
+---
+layout: base
+---
+
+<div class="ui center aligned basic segment">
+  <img
+    width="200px"
+    src="{% link /assets/sadderSquonk.svg %}"
+    onerror="this.src='{% link /assets/Squonk.png %}'"
+    alt="The Squonk logo.">
+
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+
+  <div class="ui big red button" onclick="window.location = '{% link index.html %}'">
+    Back to home <i class="home icon"></i>
+  </div>
+</div>
+

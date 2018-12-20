@@ -1,0 +1,52 @@
+---
+layout: masthead_base
+---
+<div id="docs">
+
+  <div class="ui grid container">
+    <div class="mobile only row">
+      <div class="sixteen wide column">
+        <button class="ui labeled icon red fluid button">
+          <i class="sidebar icon"></i>
+          Docs Menu
+        </button>
+      </div>
+    </div>
+    <nav class="four wide tablet computer only column">
+
+      <a href="{% link docs/index.html %}"><h2 class="ui header">Docs</h2></a>
+      <ul class="ui bulleted list">
+        <li class="item">
+          <a href="{{ site.baseurl }}{% link docs/cells/index.html %}">Cell Directory</a>
+        </li>
+        {% for nav in site.data.docs.links %}
+
+        {% include docs_lister.html %}
+
+        {% endfor %}
+      </ul>
+
+
+    </nav>
+    <main class="sixteen wide mobile twelve wide tablet twelve wide computer column">
+      {% include docs_breadcrumbs.html %}
+      {{ content }}
+    </main>
+  </div>
+
+</div>
+
+<nav class="ui sidebar inverted vertical menu">
+  <a href="{% link docs/index.html %}"><h2 class="ui header">Docs</h2></a>
+  <ul class="ui very relaxed divided list">
+    <li class="item">
+      <a href="{{ site.baseurl }}{% link docs/cells/index.html %}">Cell Directory</a>
+    </li>
+    {% for nav in site.data.docs.links %}
+
+    {% include docs_lister.html %}
+
+    {% endfor %}
+  </ul>
+
+</nav>

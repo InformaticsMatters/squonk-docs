@@ -1,0 +1,16 @@
+<li class="{% if nav[0] == page.title %}active {% endif %}item">
+  {% if nav[1].link %}
+
+  <a href="/docs/content/{{ nav[1].link }}">{{ nav[0] }}</a>
+
+  {% else %}
+      {{ nav[0] }}
+  {% endif %}
+  {% if nav[1].children %}
+      <ul class="list">
+      {% for nav in nav[1].children %}
+          {% include docs_lister.html %}
+      {% endfor %}
+      </ul>
+  {% endif %}
+</li>
