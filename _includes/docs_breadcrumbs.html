@@ -4,6 +4,8 @@
 
 {% if docurl.size > 1 %}
   <nav class="ui big breadcrumb" aria-label="breadcrumb">
+    <a href="/" class="section">Home</a>
+    <i class="right angle icon divider"></i>
     {% for part in docurl %}
 
       {% if forloop.last == false %}

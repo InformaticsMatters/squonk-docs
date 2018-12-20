@@ -1,6 +1,13 @@
 ---
-layout: home
+# Choose home_text or home_image if you want an image or just the title
+# on the right hand side of the header section on the landing page.
+# The image and text sources are set in _config.yml
+layout: home_image
 title: Squonk
+
+# Required for mobile javascript sidebar
+jsIncludes:
+  - lib/sidebar.js
 ---
 
 ## Squonk Computational Notebook
