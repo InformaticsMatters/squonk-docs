@@ -2,7 +2,7 @@ import os
 import re
 import csv
 
-IGNORE = ['index.html', 'indexer.py', 'base']
+IGNORE = ['index.md', 'index.html', 'indexer.py', 'base']
 BASE_PATH = os.path.dirname(os.path.realpath(__file__))
 
 cells_dir = sorted(filter(lambda e: e not in IGNORE, os.listdir(BASE_PATH)))

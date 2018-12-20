@@ -1,20 +1,17 @@
 ---
 layout: base
-title: Squonk
+jsIncludes:
+  - sidebar.js
 ---
 <header id="masthead" class="ui basic center aligned segment">
   <div class="ui text container two column grid">
     <div class="four wide column">
       <img
-        id="squonk_masthead"
         src="{% link assets/Squonk_Vector.svg %}"
         onerror="this.src='{% link assets/Squonk.png %}'">
     </div>
-    <div class="right floated right aligned four wide column">
-      <img
-        id="squonk_masthead"
-        src="{% link assets/Squonk_Vector.svg %}"
-        onerror="this.src='{% link assets/Squonk.png %}'">
+    <div class="right floated ten wide column">
+      <h1>{{ site.title }}</h1>
     </div>
   </div>
 </header>
@@ -47,15 +44,7 @@ title: Squonk
 
   </nav>
   <main class="sixteen wide mobile twelve wide tablet twelve wide computer column">
-    <h2>Squonk Computational Notebook</h2>
-    <p>
-    We believe that the reason computational tools are not being utilised effectively in R&amp;D is not because of a lack of functionality, but a lack of usability. And we don't just mean standard UI/UX type issues, rather usability of the whole work process. The Computational Notebook is a new breed of software designed around that work process. By integrating best of breed open source and commercial tools and making them interoperable and simple to use, the Squonk Computational Notebook allows scientists to perform complex workflows easily. Not only can you process your data but you can also analyse the results. As you work a record of what you did is automatically built up, providing strong providence and reproducibility. Controlled sharing facilitates secure collaboration with co-workers.
-    </p>
-
-
-    <p>
-    <a href="/portal" alt="access squonk">Access Squonk here</a>
-    </p>
+    {{ content }}
   </main>
 </main>
 
