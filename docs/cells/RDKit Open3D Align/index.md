@@ -23,7 +23,8 @@ A dataset of molecules
 ---|---
 Query mol index|The index of the structure in the queryMol dataset. Default is the first.
 O3DAlign score threshold|Alignment score threshold determining which structures are output. If not specified then all are output.
-Number of conformers|Number of conformers to generate (leave empty if input already contains 3D structures)|
+Use Crippen (logP) contributions|Include lipophilicity contributions in the alignment as well as shape. 
+Number of conformers|Number of conformers to generate (leave empty if input already contains 3D structures).
 
 ## ADDITIONAL INFO
 Open3DAlign can be used to perform a rigid alignment of 3D structures. Details can be found [here](http://open3dalign.sourceforge.net/). It has been incorporated into RDKit, which is how it is used by this cell.
