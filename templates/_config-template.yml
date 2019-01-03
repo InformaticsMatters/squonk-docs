@@ -8,12 +8,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Generic Customer Site
-customer_image: /assets/Squonk.png
-customer_alt: Alt text image
 description: A web based workflow tool for computational chemistry and cheminformatics
 baseurl: "" # the subpath of your the docs. I.e where the docs will be on your website
 url: "https://squonk.it" # the base hostname & protocol for your site, e.g. http://example.com
 ganalytics: UA-123456789-1 # Google analytics key
+
+
 
 
 
