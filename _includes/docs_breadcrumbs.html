@@ -2,7 +2,7 @@
 {% assign end = decodedurl.size | minus: 2 %}
 {% assign docurl = decodedurl | slice: 1, end | split: "/" %}
 
-{% if docurl.size > 1 %}
+{% if docurl.size >= 1 %}
   <nav class="ui big breadcrumb" aria-label="breadcrumb">
     <a href="/" class="section">Home</a>
     <i class="right angle icon divider"></i>
