@@ -65,6 +65,10 @@ exclude:
   - vendor/ruby/
   - .sass-cache
   - templates/
+  - init.sh
+  - build.sh
+  - semantic.json
+  - semantic/
 
 # Minifying options
 compress_html:
