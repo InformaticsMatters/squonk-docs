@@ -12,7 +12,7 @@ title: Generic Customer Site
 description: A web based workflow tool for computational chemistry and cheminformatics
 baseurl: "" # the subpath of your the docs. I.e where the docs will be on your website
 url: "https://squonk.it" # the base hostname & protocol for your site, e.g. http://example.com
-ganalytics: UA-123456789-1 # Google analytics key
+ganalytics: "" # Google analytics key
 
 
 

@@ -2,8 +2,8 @@ if [[ -f "index.md" || -f "_config.yml" || -f "header.md" ]]
 then
   if [[ $1 == "production" ]]
   then
-    JEKYLL_ENV=production
-    bundle exec jekyll build
+    echo "Building in for production"
+    JEKYLL_ENV=production bundle exec jekyll build
   else
     bundle exec jekyll build
   fi
