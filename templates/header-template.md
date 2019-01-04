@@ -3,10 +3,6 @@
 This project uses semantic ui (https://semantic-ui.com/) for styling.
 See their docs for how to change column widths, text alignment etc.
 
-Text inside of {% %} are liquid syntax from the jekyll system.
-Text inside of {{ }} represents accessing variables.
-The _config.yml file defines {{ site. }} variables.
-
 {% endcomment %}
 <div class="four wide column">
   <!-- onerror to provide fallback for browsers that don't suppoer vector graphics. If replaced by a .png or .jpg onerror can be removed. -->
