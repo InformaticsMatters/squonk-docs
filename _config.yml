@@ -1,0 +1,78 @@
+
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Generic Customer Site
+description: A web based workflow tool for computational chemistry and cheminformatics
+baseurl: "" # the subpath of your the docs. I.e where the docs will be on your website
+url: "https://squonk.it" # the base hostname & protocol for your site, e.g. http://example.com
+ganalytics: UA-123456789-1 # Google analytics key
+
+
+
+
+
+
+
+
+
+# Defaults for page frontmatter. Only change if you want to change site
+# styling and structure or you are adding new page types.
+defaults:
+  -
+    scope:
+      path: "docs/*"
+      type: "pages"
+    values:
+      layout: docs_article
+      cssIncludes:
+        - style/docs.css
+      cssLinks:
+        - /style/main.css
+      jsIncludes:
+        - lib/sidebar.js
+        - lib/docs.js
+  -
+    scope:
+      path: "docs/cells/*"
+      type: "pages"
+    values:
+      layout: "cell"
+      jsIncludes:
+        - lib/sidebar.js
+        - lib/docs.js
+
+
+# Build settings -- Probably best to not modify these
+markdown: kramdown
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache
+  - templates/
+  - init.sh
+  - build.sh
+  - semantic.json
+  - semantic/
+
+# Minifying options
+compress_html:
+  clippings: all
+  comments: all
+  ignore:
+    envs: [development]
