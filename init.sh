@@ -7,7 +7,7 @@ fi
 
 if ! [[ -f "header.md" ]]
 then
-	cp templates/header-template.md header.md
+	cp templates/header-template.md _includes/header.md
 fi
 
 if ! [[ -f "_config-template.md" ]]
